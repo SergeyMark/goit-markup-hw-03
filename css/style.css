@@ -9,6 +9,7 @@
     --white-color: #ffffff;
     --logo-color: #000000;
     --border-btn-cl: rgba(0, 0, 0, 0.15);
+    --border-head-cl: #ECECEC;
 }
 
 body{
@@ -68,6 +69,10 @@ ul{
 /*------------ INDEX.HTML------------- */
 
 /* HEADER */
+
+.header{
+    border: 1px solid var(--border-head-cl);
+}
 
 .header-nav{
     display: flex;

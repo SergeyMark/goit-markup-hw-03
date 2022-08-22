@@ -8,6 +8,7 @@
     --team-bg-color: #F5F4FA;
     --white-color: #ffffff;
     --logo-color: #000000;
+    --border-btn-cl: rgba(0, 0, 0, 0.15);
 }
 
 body{
@@ -19,28 +20,61 @@ body{
     color: var(--text-color);
 }
 
-.decor-none{
-    text-decoration: none;
+/* UTILITA */
+
+h1, h2, h3, h4, h5, h5{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+p{
+    margin-top: 0;
 }
 
 ul{
     list-style: none;
+
+    padding: 0;
+    margin: 0;
+}
+
+.section{
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 /* HOVER AND FOCUS EFFECT */
 
 .footer-adress:hover,
 .footer-adress:focus,
-.link-adress:hover,
-.link-adress:focus,
+.adress-link:hover,
+.adress-link:focus,
 .link:hover,
 .link:focus {
     color: var(--premary-color);
 }
 
+.decor-none {
+    text-decoration: none;
+
+}
+
+.container{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /*------------ INDEX.HTML------------- */
 
-/* LOGO */
+/* HEADER */
+
+.header-nav{
+    display: flex;
+    align-items: center;
+}
+
+/* logo */
 
 .logo{
     font-family: 'Raleway', sans-serif;
@@ -56,7 +90,20 @@ ul{
     color: var(--premary-color);
 }
 
-/* NAVIGATION */
+/* navigation */
+
+.header-list{
+    display: flex;
+    margin-left: 93px;
+}
+
+.header-item{
+    margin-right: 50px;
+}
+
+.header-item:last-child{
+    margin-right: 0;
+}
 
 .link {
     font-weight: 500;
@@ -65,9 +112,22 @@ ul{
     letter-spacing: 0.02em;
     
     color: var(--heading-color);
+
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
-.link-adress{
+.link.active {
+    color: var(--premary-color);
+}
+
+.address-list{
+    display: flex;
+    margin-left: auto;
+}
+
+.adress-link{
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -76,20 +136,18 @@ ul{
     color: var(--text-color);
 }
 
-.link.active{
-    color: var(--premary-color);
+.address-list .adress-item + .adress-item{
+    margin-left: 50px;
 }
 
 /* MAIN */
-
-.main {
-    /* background-color: var(--bg-color); */
-}
 
 /* HERO */
 
 .hero{
     background-color: var(--second-bg-color);
+
+    text-align: center;
 }
 
 .hero-title{
@@ -101,6 +159,8 @@ ul{
     text-transform: uppercase;
     
     color: var(--white-color);
+
+    margin-bottom: 30px;
 }
 
 .btn{
@@ -113,6 +173,9 @@ ul{
     background-color: var(--premary-color);
 
     cursor: pointer;
+
+    box-shadow: 0px 4px 4px var(--border-btn-cl);
+    border-radius: 4px;
 }
 
 /* PREFERENCE */

@@ -11,32 +11,38 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <!-- header -->
-    <header>
-      <nav class="nav">
+    <header class="header">
+      <nav class="header-nav container">
         <a class="logo decor-none" href=""
           ><span class="logo-phrase">Web</span>Studio</a
         >
-        <ul class="list">
-          <li>
+        <ul class="header-list">
+          <li class="header-item">
             <a class="link active decor-none" href="./index.html">Студія</a>
           </li>
-          <li>
+          <li class="header-item">
             <a class="link decor-none" href="./portfolio.html">Портфоліо</a>
           </li>
-          <li><a class="link decor-none" href="">Контакти</a></li>
+          <li class="header-item">
+            <a class="link decor-none" href="">Контакти</a>
+          </li>
         </ul>
-        <ul class="list">
-          <li>
-            <a class="link-adress decor-none" href="mailto:info@devstudio.com"
+        <ul class="address-list">
+          <li class="adress-item">
+            <a class="adress-link decor-none" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
             >
           </li>
-          <li>
-            <a class="link-adress decor-none" href="tel:+380961111111"
+          <li class="adress-item">
+            <a class="adress-link decor-none" href="tel:+380961111111"
               >+38 096 111 11 11</a
             >
           </li>
@@ -46,12 +52,12 @@
     <!-- main content -->
     <main class="main">
       <!-- block hero -->
-      <section class="hero">
+      <section class="hero section container">
         <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
         <button class="btn" type="button">Замовити послугу</button>
       </section>
       <!-- block preference -->
-      <section class="preference">
+      <section class="preference section">
         <!-- Цей заголовок буде прихований -->
         <h2 hidden>Наші Переваги</h2>
         <ul class="list">
@@ -85,7 +91,7 @@
         </ul>
       </section>
       <!-- Block we doing -->
-      <section class="features">
+      <section class="features section">
         <h2 class="section-title">Чим ми займаємося</h2>
         <ul>
           <li><img src="images/box.jpg" alt="Компьютер" width="370" /></li>
@@ -96,7 +102,7 @@
         </ul>
       </section>
       <!-- block team -->
-      <section class="team">
+      <section class="team section">
         <h2 class="section-title">Наша команда</h2>
         <ul class="team-list">
           <li class="team-item">

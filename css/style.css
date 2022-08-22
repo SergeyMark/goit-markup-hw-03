@@ -1,0 +1,255 @@
+:root{
+    --premary-color: #2196F3;
+    --text-color: #757575;
+    --heading-color: #212121;
+    --adress-color: rgba(255, 255, 255, 0.6);
+    --bg-color: #F5F5F5;
+    --second-bg-color: #2F303A;
+    --team-bg-color: #F5F4FA;
+    --white-color: #ffffff;
+    --logo-color: #000000;
+}
+
+body{
+    /* font-family: 'Raleway', sans-serif; */
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 1.15;
+
+    color: var(--text-color);
+}
+
+.decor-none{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+/* HOVER AND FOCUS EFFECT */
+
+.footer-adress:hover,
+.footer-adress:focus,
+.link-adress:hover,
+.link-adress:focus,
+.link:hover,
+.link:focus {
+    color: var(--premary-color);
+}
+
+/*------------ INDEX.HTML------------- */
+
+/* LOGO */
+
+.logo{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+
+    color: var(--logo-color);
+}
+
+.logo .logo-phrase{
+    color: var(--premary-color);
+}
+
+/* NAVIGATION */
+
+.link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    
+    color: var(--heading-color);
+}
+
+.link-adress{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    
+    color: var(--text-color);
+}
+
+.link.active{
+    color: var(--premary-color);
+}
+
+/* MAIN */
+
+.main {
+    /* background-color: var(--bg-color); */
+}
+
+/* HERO */
+
+.hero{
+    background-color: var(--second-bg-color);
+}
+
+.hero-title{
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    
+    color: var(--white-color);
+}
+
+.btn{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    
+    color: var(--white-color);
+    background-color: var(--premary-color);
+
+    cursor: pointer;
+}
+
+/* PREFERENCE */
+
+.preference-title{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: var(--heading-color);
+}
+
+.preference-text{
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    
+    color: var(--text-color);
+}
+
+/* FEATURES */
+
+.section-title{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    
+    color: var(--heading-color);
+}
+
+/*  .features-title,
+    .team-title{
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.16;
+        text-align: center;
+        letter-spacing: 0.03em;
+    
+        color: var(--heading-color);
+} */
+
+/* TEAM */
+
+.team{
+    background-color:var(--team-bg-color);
+}
+
+.team-item{
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+}
+
+.team-subtitle{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: var(--heading-color);
+}
+
+.team-subtext{
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+           
+    color: var(--text-color);
+}
+
+/* FOOTER */
+
+.footer{
+    background-color: var(--second-bg-color);
+}
+
+.footer .logo{
+    color: var(--white-color);
+}
+
+.address{
+    font-style: normal;
+}
+
+.footer-adress{
+    letter-spacing: 0.03em;
+    line-height: 1.71;
+        
+    color: var(--adress-color);
+}
+
+.color-white{
+    color: var(--white-color);
+}
+
+/* --------------- PORTFOLIO -------------- */
+
+/* FILTER */
+
+.filter-btn{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    
+    color: var(--heading-color);
+
+    cursor: pointer;
+}
+
+.filter-btn:hover,
+.filter-btn:focus{
+    color: var(--white-color);
+    background-color: var(--premary-color);
+}
+
+/* GALLERY */
+
+.uppertext{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    
+    color: var(--heading-color);
+}
+
+.subtext{
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    
+    color: var(--text-color);
+}

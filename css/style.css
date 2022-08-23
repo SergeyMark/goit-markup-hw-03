@@ -375,7 +375,11 @@ ul{
 
 .gallery-img{
     display: block;
-    margin-bottom: 20px;
+    max-width: 100%;
+}
+
+.group-text{
+    padding: 20px 24px;
 }
 
 .uppertitle{
@@ -387,7 +391,6 @@ ul{
     color: var(--heading-color);
 
     margin-bottom: 4px;
-    margin-left: 24px;
 }
 
 .subtext{
@@ -396,6 +399,4 @@ ul{
     letter-spacing: 0.03em;
     
     color: var(--text-color);
-
-    margin-left: 24px;
 }

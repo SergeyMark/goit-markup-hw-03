@@ -180,6 +180,8 @@ ul{
 
     box-shadow: 0px 4px 4px var(--border-btn-cl);
     border-radius: 4px;
+
+    padding: 10px 32px;
 }
 
 /* PREFERENCE */

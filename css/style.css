@@ -100,7 +100,11 @@ ul{
     margin-right: 50px;
 }
 
-.header-item:last-child{
+/* .header-item:last-child{
+    margin-right: 0;
+} */
+
+.header-item:nth-last-child(-n + 1) {
     margin-right: 0;
 }
 
@@ -333,7 +337,11 @@ ul{
     margin-right: 8px;
 }
 
-.filter-list .filter-item:last-child{
+/* .filter-list .filter-item:last-child{
+    margin-right: 0;
+} */
+
+.filter-list .filter-item:nth-last-child(-n + 1) {
     margin-right: 0;
 }
 

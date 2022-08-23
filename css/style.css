@@ -19,6 +19,7 @@ body{
     line-height: 1.15;
 
     color: var(--text-color);
+
 }
 
 /* UTILITA */
@@ -379,10 +380,13 @@ ul{
 
 .gallery-item{
     flex-basis: calc((100% - 60px) / 3);
+
+    width: 370px;
 }
 
 .gallery-img{
     display: block;
+    max-width: 100%;
 }
 
 .group-text{

@@ -20,21 +20,23 @@
   <body>
     <!-- header -->
     <header class="header">
-      <nav class="header-nav container">
+      <div class="header-flex container">
         <a class="logo decor-none" href=""
           ><span class="logo-phrase">Web</span>Studio</a
         >
-        <ul class="header-list">
-          <li class="header-item">
-            <a class="link active decor-none" href="./index.html">Студія</a>
-          </li>
-          <li class="header-item">
-            <a class="link decor-none" href="./portfolio.html">Портфоліо</a>
-          </li>
-          <li class="header-item">
-            <a class="link decor-none" href="">Контакти</a>
-          </li>
-        </ul>
+        <nav class="header-nav">
+          <ul class="header-list">
+            <li class="header-item">
+              <a class="link active decor-none" href="./index.html">Студія</a>
+            </li>
+            <li class="header-item">
+              <a class="link decor-none" href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li class="header-item">
+              <a class="link decor-none" href="">Контакти</a>
+            </li>
+          </ul>
+        </nav>
         <ul class="address-list">
           <li class="adress-item">
             <a class="adress-link decor-none" href="mailto:info@devstudio.com"
@@ -47,22 +49,21 @@
             >
           </li>
         </ul>
-      </nav>
+      </div>
     </header>
     <!-- main content -->
     <main class="main">
       <!-- block hero -->
-      <section class="hero section">
+      <section class="hero">
         <div class="container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
           <button class="btn" type="button">Замовити послугу</button>
         </div>
       </section>
       <!-- block preference -->
-      <section class="preference section">
-        <!-- Цей заголовок буде прихований -->
+      <section class="section">
         <div class="container">
-          <h2 hidden>Наші Переваги</h2>
+          <h2 class="hidden">Наші Переваги</h2>
           <ul class="preference-list">
             <li class="preference-item">
               <h3 class="preference-title">УВАГА ДО ДЕТАЛЕЙ</h3>
@@ -123,8 +124,10 @@
                 alt="співробітник Ігор"
                 width="270"
               />
-              <h3 class="team-subtitle">Ігор Дем'яненко</h3>
-              <p class="team-subtext">Product Designer</p>
+              <div class="team-group-text">
+                <h3 class="team-subtitle">Ігор Дем'яненко</h3>
+                <p class="team-subtext">Product Designer</p>
+              </div>
             </li>
             <li class="team-item">
               <img
@@ -133,8 +136,10 @@
                 alt="співробітниця Ольга"
                 width="270"
               />
-              <h3 class="team-subtitle">Ольга Рєпіна</h3>
-              <p class="team-subtext">Frontend Developer</p>
+              <div class="team-group-text">
+                <h3 class="team-subtitle">Ольга Рєпіна</h3>
+                <p class="team-subtext">Frontend Developer</p>
+              </div>
             </li>
             <li class="team-item">
               <img
@@ -143,8 +148,10 @@
                 alt="співробітник Микола"
                 width="270"
               />
-              <h3 class="team-subtitle">Микола Тарасов</h3>
-              <p class="team-subtext">Marketing</p>
+              <div class="team-group-text">
+                <h3 class="team-subtitle">Микола Тарасов</h3>
+                <p class="team-subtext">Marketing</p>
+              </div>
             </li>
             <li class="team-item">
               <img
@@ -153,8 +160,10 @@
                 alt="співробітник Михайло"
                 width="270"
               />
-              <h3 class="team-subtitle">Михайло Єрмаков</h3>
-              <p class="team-subtext">UI Designer</p>
+              <div class="team-group-text">
+                <h3 class="team-subtitle">Михайло Єрмаков</h3>
+                <p class="team-subtext">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>

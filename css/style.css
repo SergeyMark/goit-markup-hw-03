@@ -10,6 +10,7 @@
     --logo-color: #000000;
     --border-btn-cl: rgba(0, 0, 0, 0.15);
     --border-head-cl: #ECECEC;
+    --border-card-cl: #EEEEEE;
 }
 
 body{
@@ -34,6 +35,12 @@ ul{
     margin: 0;
 }
 
+img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
 .section{
     padding-top: 94px;
     padding-bottom: 94px;
@@ -45,9 +52,23 @@ ul{
 }
 
 .container {
+    padding: 0 15px;
     width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
+}
+
+.hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 /* HOVER AND FOCUS EFFECT */
@@ -69,7 +90,7 @@ ul{
     border: 1px solid var(--border-head-cl);
 }
 
-.header-nav{
+.header-flex{
     display: flex;
     align-items: center;
 }
@@ -149,6 +170,8 @@ ul{
 /* HERO */
 
 .hero{
+    padding: 200px 0;
+
     background-color: var(--second-bg-color);
 
     text-align: center;
@@ -158,12 +181,13 @@ ul{
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     
     color: var(--white-color);
 
+    width: 696px;
+    margin: 0 auto;
     margin-bottom: 30px;
 }
 
@@ -207,7 +231,7 @@ ul{
 
 .preference-list{
     display: flex;
-    justify-content: space-between;
+    gap: 30px;
 }
 
 .preference-item{
@@ -215,6 +239,10 @@ ul{
 }
 
 /* FEATURES */
+
+.features{
+    padding-top: 0;
+}
 
 .section-title{
     font-weight: 700;
@@ -230,7 +258,7 @@ ul{
 
 .features-list{
     display: flex;
-    justify-content: space-between;
+    gap: 30px;
 }
 
 /*  .features-title,
@@ -252,7 +280,7 @@ ul{
 
 .team-list{
     display: flex;
-    justify-content: space-between;
+    gap: 30px;
 }
 
 .team-item{
@@ -261,9 +289,8 @@ ul{
     letter-spacing: 0.03em;
 }
 
-.team-img{
-    display: block;
-    margin-bottom: 30px;
+.team-group-text{
+    padding: 30px 0;
 }
 
 .team-subtitle{
@@ -393,6 +420,10 @@ ul{
 
 .group-text{
     padding: 20px 24px;
+
+    border-left: 1px solid var(--border-card-cl);
+    border-right: 1px solid var(--border-card-cl);
+    border-bottom: 1px solid var(--border-card-cl);
 }
 
 .uppertitle{

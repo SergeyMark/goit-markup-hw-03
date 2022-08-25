@@ -87,7 +87,7 @@ img{
 /* HEADER */
 
 .header{
-    border: 1px solid var(--border-head-cl);
+    border-bottom: 1px solid var(--border-head-cl);
 }
 
 .header-flex{
@@ -113,9 +113,12 @@ img{
 
 /* navigation */
 
+.header-nav{
+    margin-left: 93px;
+}
+
 .header-list{
     display: flex;
-    margin-left: 93px;
 }
 
 .header-item{
